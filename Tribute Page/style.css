@@ -108,3 +108,38 @@ td:nth-of-type(1){
   opacity: 0.8;
   transform: scale(1.2);
 }
+
+
+@media screen and (max-width:760px){
+  #title{
+      font-size: 2.5rem;
+      padding-top: 60px;
+  }
+  #img-caption{
+      font-size: 1.3rem;
+      padding-bottom: 2rem;
+  }
+  .blockquote{
+      margin: 2rem;
+      font-size: 1.8rem;
+  }
+  .heading{
+      font-size: 1.8rem;
+      font-weight: 600;
+  }
+  table{
+      width: 100%;
+  }
+  td:nth-of-type(1){
+      width: 150px;
+  }
+  .footer{
+      font-size: 1.5rem;
+      padding: 4rem;
+      text-align: left;
+  }
+  .footer a{
+      font-size: 1.8rem;
+  }
+}
+
