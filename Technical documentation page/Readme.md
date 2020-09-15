@@ -32,3 +32,8 @@ User Story #13: When I click on a navbar element, the page should navigate to th
 User Story #14: On regular sized devices (laptops, desktops), the element with id="navbar" should be shown on the left side of the screen and should always be visible to the user.
 
 User Story #15: My Technical Documentation page should use at least one media query.
+
+
+
+
+live at (https://codepen.io/mr_giridhar7632/full/gOPdYGL)
