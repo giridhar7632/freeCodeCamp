@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,500" rel="stylesheet">
+
+</head>
+<body>
+    <div class="header"></div>
+    <div class="container">
+        <h1 id="title">Online Shopping Survey Form</h1>
+        <p id="description">Thank you for visiting Amazon. In order to serve you better, please answer a few questions concerning your online purchase from our website today.<span> We value this information, and will not share your answers with third parties, but instead will use it to upgrade our platform.</span></p>
+        <form id="survey-form">
+            <label for="name" id="name-label">Name</label>
+            <input type="text" id="name" placeholder="Enter your name" autocomplete="off" required><br />
+            <label for="email" id="email-label">Email</label>
+            <input type="email" name="email" id="email" placeholder="example@gmail.com"  autocomplete="off" required><br />
+            <label for="number" id="number-label">Age</label>
+            <input type="number" name="age" id="number" min="10" max="99" placeholder="Enter your age"  autocomplete="off"><br />
+            <div class="form-group">
+                <p class="dropdown">How did you first learn about our online shop?</p>
+                <select name="info" id="dropdown" class="form-control">
+                    <option class="reason" value="friends">Select one thing</option>
+                    <option value="friends">Friends or family members</option>
+                    <option value="internet">Internet forums</option>
+                    <option value="web">Web engine search </option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p class="radio">How often do you shop online?</p>
+                <div class="option">
+                    <input type="radio" name="radio" value="1"> At least once a week
+                </div>
+                <div class="option">
+                    <input type="radio" name="radio" value="2"> Once per month 
+                </div>
+                <div class="option">
+                    <input type="radio" name="radio" value="3"> Once every six months 
+                </div>
+                <div class="option">
+                    <input type="radio" name="radio" value="4"> Once a year 
+                </div>
+                <div class="option">
+                    <input type="radio" name="radio" value="5"> I don’t know, this was my first online purchase ever  
+                </div>
+            </div>
+            <div class="form-group">
+                <p class="check-box">Which products would you like to order in our store?</p>
+                <div class="option">
+                    <input type="checkbox" name="1" value="1">Accessories
+                </div>
+                <div class="option">
+                    <input type="checkbox" name="1" value="2"> Home decor
+                </div>
+                <div class="option">
+                    <input type="checkbox" name="1" value="3"> Kitchen
+                </div>
+                <div class="option">
+                    <input type="checkbox" name="1" value="4"> Jwellery
+                </div>
+                <div class="option">
+                    <input type="checkbox" name="1" value="5"> Toys and games
+                </div>
+                <div class="option">
+                    <input type="checkbox" name="1" value="6"> Books
+                </div>
+                <div class="option">
+                    <input type="checkbox" name="1" value="7"> Movies 
+                </div>
+                <div class="option">
+                    <input type="checkbox" name="1" value="8"> Music 
+                </div>
+                <div class="option">
+                    <input type="checkbox" name="1" value="9"> Electronics
+                </div>
+                <div class="option">
+                    <input type="checkbox" name="1" value="10"> Clothing
+                </div>
+                <div class="option">
+                    <input type="checkbox" name="1" value="11"> Beauty and Personal care 
+                </div>
+                <div class="option">
+                    <input type="checkbox" name="1" value="12"> Health care 
+                </div>   
+            </div>
+            <div class="form-group">
+                <p class="text-area"> Would you like to suggest any improvment in our services?</p>
+                <textarea name="Text1" cols="40" rows="5" id="text-area"></textarea>
+            </div>
+            <button id="submit" type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
