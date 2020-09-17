@@ -30,7 +30,7 @@
   position: absolute;
   top: 6em; }
 
-/*#tooltip {
+#tooltip {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -60,5 +60,5 @@
   stroke-width: 1;
   fill: none; }
 
-.info {
-  font-size: 0.8em; }*/
+.more-info {
+  font-size: 0.8em; }
