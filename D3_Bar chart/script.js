@@ -126,14 +126,14 @@ const render = data => {
         .style({
           'height': d+"px",
           'width': barWidth+"px",
-          'opacity': 0.9,
+          'opacity': 0.8,
           'left': (i*barWidth)+0+"px",
           'top': height-d+"px",
           'transform': 'translateX(60px)'  
         })
       tooltip.transition()
         .duration(200)
-        .style('opacity', 0.9)
+        .style('opacity', 0.8)
       tooltip.html(`${years[i]}<br> $ ${GDP[i].toFixed(1).replace(/(\d)(?=(\d{3})+\.)/g, '$1,')} Billion`)
         .attr('data-date', dataset[i][0])
         .style({
