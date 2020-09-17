@@ -1,5 +1,6 @@
 # Survey Form
 ## Online shopping survey form
+live at (https://codepen.io/mr_giridhar7632/full/WNrzyba)
 
 **User Stories**
 
@@ -34,8 +35,3 @@ User Story #14: Inside the form element, I can select several fields from a seri
 User Story #15: Inside the form element, I am presented with a textarea at the end for additional comments.
 
 User Story #16: Inside the form element, I am presented with a button with id="submit" to submit all my inputs.
-
-
-
-
-live at (https://codepen.io/mr_giridhar7632/full/WNrzyba)
