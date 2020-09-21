@@ -152,7 +152,5 @@ const render = data => {
     })
 }
 d3.json("https://raw.githubusercontent.com/freeCodeCamp/ProjectReferenceData/master/GDP-data.json").then(data => {
-  //var dataset = data.data
-  //var total = dataset.length
   render(data)
 })
