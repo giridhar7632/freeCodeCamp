@@ -14,25 +14,10 @@
 body{
   overflow-x: hidden;
 }
-
-.logo{
-  position: absolute;
-  top: 150px;
-  right: 150px;
-  color: var(--white);
-  font-size: 30px;
-  width: 150px;
-  height: 150px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid var(--black);
-  border-radius: 50%;
-  font-family: 'Architects Daughter', cursive;
-}
 section{
   height: 100vh;
   min-width: 100%;
+  background: var(--black);
 }
 /* Scroll bar */
 ::-webkit-scrollbar{
@@ -45,14 +30,15 @@ section{
   width: 10px;
   height: 100%;
   background: rgba(255,255,255,0.05);
-
+  z-index: 1000;
 }
 #progressbar{
   position: fixed;
   top: 0;
   right: 0;
   width: 10px;
-  background: linear-gradient(to top, var(--green),var(--dark -green));
+  background: linear-gradient(to top, var(--green),var(--dark-green));
+  z-index: 1000;
 }
 #progressbar:before{
   content: '';
@@ -100,9 +86,6 @@ section{
 .nav li .active,
 .nav-links li a:hover{
   color: var(--green);
-}
-#welcome-section{
-  background: var(--black);
 }
 #welcome-section:before{
   content: '';
@@ -187,4 +170,12 @@ section{
     transform: translateX(0px);
     opacity: 1;
   }
+}
+
+/* about me */
+#about-me{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
 }
