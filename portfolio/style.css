@@ -173,9 +173,3 @@ section{
 }
 
 /* about me */
-#about-me{
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  flex-direction: column;
-}
