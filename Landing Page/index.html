@@ -1,11 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Hand Sanitizer | landing page</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <section id="home">
+      <header id="header">
+        <nav id="nav-bar">
+          <div class="logo"><a id="nav-link" href="#">Sanitizer</a></div>
+          <div class="nav-links">
+            <ul>
+              <li><a href="#" id="nav-link">Home</a></li>
+              <li><a href="#about" id="nav-link">How to use</a></li>
+              <li><a href="#pricing" id="nav-link">Pricing</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <div class="container">
+        <h1>Sanitizer</h1>
+        <h3>
+          A premium quality alcohol-based hand sanitizer for fighting the
+          viruses.
+        </h3>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <input
+            name="email"
+            id="email"
+            type="email"
+            placeholder="Enter your email address"
+            required
+          />
+          <input id="submit" type="submit" value="Get Started" class="btn" />
+        </form>
+      </div>
+    </section>
+    <section id="about">
+      <h1>How to use?</h1>
+      <div class="container">
+        <iframe
+          width="420"
+          height="240"
+          src="https://www.youtube.com/embed/bVgpxdYm6fY"
+        >
+        </iframe>
+      </div>
+    </section>
+    <section id="pricing">
+      <div class="container">
+        <div class="card">
+          <div class="card-title">A pack of 10</div>
+          <div class="price">$ 100</div>
+          <button class="btn">Select</button>
+        </div>
+        <div class="card">
+          <div class="card-title">A pack of 100</div>
+          <div class="price">$ 1000</div>
+          <button class="btn">Select</button>
+        </div>
+        <div class="card">
+          <div class="card-title">A cartoon</div>
+          <div class="price">variable | for business</div>
+          <button class="btn">Contact</button>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <footer>
+        <ul>
+          <li class="nav-link"><a href="#">Home</a></li>
+          <li class="nav-link"><a href="#about">Privacy</a></li>
+          <li class="nav-link"><a href="pricing">Terms</a></li>
+          <li class="nav-link"><a href="contact">Contact</a></li>
+        </ul>
+      </footer>
+      <p>Copyright 2021, All rights reserved</p>
+    </section>
+    <script src="script.js"></script>
+  </body>
 </html>
