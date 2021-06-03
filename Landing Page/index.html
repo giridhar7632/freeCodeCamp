@@ -23,10 +23,10 @@
       </header>
       <div class="container">
         <h1>Sanitizer</h1>
-        <h3>
+        <p>
           A premium quality alcohol-based hand sanitizer for fighting the
           viruses.
-        </h3>
+        </p>
         <form id="form" action="https://www.freecodecamp.com/email-submit">
           <input
             name="email"
@@ -34,17 +34,15 @@
             type="email"
             placeholder="Enter your email address"
             required
-          />
+          /><br />
           <input id="submit" type="submit" value="Get Started" class="btn" />
         </form>
       </div>
     </section>
     <section id="about">
-      <h1>How to use?</h1>
       <div class="container">
+        <h1 class="sub-head">How to use?</h1>
         <iframe
-          width="420"
-          height="240"
           src="https://www.youtube.com/embed/bVgpxdYm6fY"
         >
         </iframe>
@@ -52,6 +50,8 @@
     </section>
     <section id="pricing">
       <div class="container">
+        <h1 class="sub-head">Pricing ...</h1>
+      <div class="card-container">
         <div class="card">
           <div class="card-title">A pack of 10</div>
           <div class="price">$ 100</div>
@@ -64,21 +64,27 @@
         </div>
         <div class="card">
           <div class="card-title">A cartoon</div>
-          <div class="price">variable | for business</div>
+          <div class="price str">variable | for business</div>
           <button class="btn">Contact</button>
         </div>
+      </div>
       </div>
     </section>
     <section id="contact">
       <footer>
-        <ul>
-          <li class="nav-link"><a href="#">Home</a></li>
-          <li class="nav-link"><a href="#about">Privacy</a></li>
-          <li class="nav-link"><a href="pricing">Terms</a></li>
-          <li class="nav-link"><a href="contact">Contact</a></li>
-        </ul>
+        <nav id="nav-bar">
+          <div class="logo"><a id="nav-link" href="#">Sanitizer</a></div>
+          <div class="nav-links">
+            <ul>
+              <li><a href="#" id="nav-link">Home</a></li>
+              <li><a href="#" id="nav-link">privacy</a></li>
+              <li><a href="#" id="nav-link">terms</a></li>
+              <li><a href="#" id="nav-link">contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <p>Copyright 2021, All rights reserved</p>
       </footer>
-      <p>Copyright 2021, All rights reserved</p>
     </section>
     <script src="script.js"></script>
   </body>

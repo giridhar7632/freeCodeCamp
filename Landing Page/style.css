@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +9,7 @@
 body {
   width: 100vw;
   overflow-x: hidden;
-  background: aliceblue;
+  background: #fff;
   scroll-behavior: smooth;
 }
 
@@ -32,11 +30,17 @@ section {
   position: relative;
 }
 
-.container {
-  width: 80%;
-  margin: 0 auto;
-  padding: 10px 20px;
+#home:before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  z-index: 10;
+  background: linear-gradient(to top, #fff, transparent);
 }
+
 header {
   width: 80%;
   margin: 0 auto;
@@ -51,13 +55,12 @@ header {
   align-items: center;
 }
 #nav-bar .logo a{
-  font-family: "Noto Serif", sans-serif;
   font-size: 28px;
   font-weight: 900;
   color: #f2f2f2;
 }
 .nav-links{
-  width: 60%;
+  width: 50%;
   color: #f2f2f2;
 }
 
@@ -75,31 +78,163 @@ a {
   color: #f2f2f2;
 }
 
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px 20px;
+  margin-top: 10vh;
+}
+
+h1{
+  font-size: 5em;
+  font-weight: 700;
+  color: #f2f2f2;
+  -webkit-text-stroke: 1px solid #999;
+  -ms-text-stroke: 1px solid #999;
+}
+
+.sub-head{
+  font-size: 3em;
+  color: #262626;
+}
+
+.container p{
+  font-size: 1.5em;
+  color: #f2f2f2;
+  -webkit-text-stroke: 1px solid #999;
+  -ms-text-stroke: 1px solid #999;
+}
+
+#email{
+  width: 250px;
+  padding: 5px 10px;
+  border: 0.5px solid #999;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+
 .btn {
+  margin-top: 10px;
   padding: 5px 15px;
-  text-align: center;
   cursor: pointer;
   outline: none;
-  color: #fff;
-  background-color: #04aa6d;
+  color: #262626;
+  font-weight: bold;
+  background-color: #f2f2f2;
   border: none;
   border-radius: 5px;
   box-shadow: 0 2px #999;
 }
 
 .btn:hover {
-  background-color: #3e8e41;
+  background-color: #d6d6d6;
 }
 
 .btn:active {
-  background-color: #3e8e41;
+  background-color: #b6b6b6;
   box-shadow: 0 1px #666;
   transform: translateY(1px);
 }
 
+iframe{
+  margin: 50px 0;
+  border: none;
+  border-radius: 5px;
+}
+
+#about{
+  height: 50vh;
+}
+
+#pricing{
+  margin: 0 auto;
+}
+
+.card-container{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card{
+  height: 300px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 15px;
+  background-color: #40aadf;
+  color: #f2f2f2;
+}
+
+.card-title{
+  font-size: 1.3em;
+}
+
+.price{
+  font-size: 2em;
+  font-weight: 900;
+}
+
+.str{
+  font-size: 1em;
+  font-weight: 700;
+}
+
+#contact{
+  height: 40vh;
+  background-color: #21a5e7;
+}
+
+footer{
+  width: 80%;
+  margin: 0 auto;
+}
+
+#contact:before{
+  content: '';
+  position: absolute;
+  top: 224vh;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  z-index: -10;
+  background: linear-gradient(to top, #21a5e7, transparent);
+}
+
+footer p{
+  color: #f2f2f2;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 720px){
+  .card-container{
+    height: 75vh;
+    flex-direction: column;
+  }
+  .card{
+    padding: 20px 0;
+    height: 150px;
+    width: 70%;
+  }
+}
+
 @media screen and (max-width: 480px){
   .container{
-    width: 95%;
+    width: 100%;
+  }
+  h1{
+    font-size: 3em;
+  }
+  .container p{
+    font-size: 1em;
+  }
+  .sub-head{
+    font-size: 2em;
   }
   #nav-bar{
     height: 20vh;
